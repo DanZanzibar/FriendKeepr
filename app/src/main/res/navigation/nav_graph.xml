@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/alerts_fragment">
+
+    <fragment
+        android:id="@+id/alerts_fragment"
+        android:name="com.example.friendkeepr.AlertsFragment"
+        tools:layout="@layout/fragment_alerts"
+        android:label="Alerts"
+        />
+
+    <fragment
+        android:id="@+id/contacts_fragment"
+        android:name="com.example.friendkeepr.ContactsFragment"
+        tools:layout="@layout/fragment_contacts"
+        android:label="Contacts"
+        />
+
+    <fragment
+        android:id="@+id/groups_fragment"
+        android:name="com.example.friendkeepr.GroupsFragment"
+        tools:layout="@layout/fragment_groups"
+        android:label="Groups"
+        />
+
+    <fragment
+        android:id="@+id/import_fragment"
+        android:name="com.example.friendkeepr.ImportFragment"
+        tools:layout="@layout/fragment_import"
+        android:label="Import"
+        />
+
+</navigation>

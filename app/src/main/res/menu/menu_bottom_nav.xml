@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alerts_fragment"
+        android:title="Alerts"
+        />
+
+    <item
+        android:id="@+id/contacts_fragment"
+        android:title="Contacts"
+        />
+
+    <item
+        android:id="@+id/groups_fragment"
+        android:title="Groups"
+        />
+
+    <item
+        android:id="@+id/import_fragment"
+        android:title="Import"
+        />
+
+</menu>
