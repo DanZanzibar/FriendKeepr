@@ -2,22 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/alerts_fragment"
-        android:title="Alerts"
+        android:title="@string/alerts"
         />
 
     <item
-        android:id="@+id/contacts_fragment"
-        android:title="Contacts"
+        android:id="@+id/friends_fragment"
+        android:title="@string/friends"
         />
 
     <item
         android:id="@+id/groups_fragment"
-        android:title="Groups"
+        android:title="@string/groups"
         />
 
     <item
         android:id="@+id/import_fragment"
-        android:title="Import"
+        android:title="@string/import_name"
         />
 
 </menu>

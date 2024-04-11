@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="@string/category_label" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:spinnerMode="dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintEnd_toEndOf="@id/days_to_reminder_edittext"
+        app:layout_constraintBaseline_toBaselineOf="@id/category_label" />
+
+    <TextView
+        android:id="@+id/days_to_reminder_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/category_label"
+        app:layout_constraintTop_toBottomOf="@id/category_label"
+        android:textSize="20sp"
+        android:text="@string/days_until_reminder_label" />
+
+    <EditText
+        android:id="@+id/days_to_reminder_edittext"
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="4"
+        app:layout_constraintStart_toEndOf="@id/days_to_reminder_label"
+        app:layout_constraintBaseline_toBaselineOf="@id/days_to_reminder_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

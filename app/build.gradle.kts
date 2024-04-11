@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.friendkeepr"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -33,9 +33,11 @@ android {
 
 dependencies {
 
+    implementation("com.opencsv:opencsv:5.5.1")
     implementation("androidx.navigation:navigation-ui:2.7.7")
     implementation("androidx.navigation:navigation-fragment:2.7.7")
     implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")

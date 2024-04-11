@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="developer_category"
+        android:title="Developer Settings">
+
+        <Preference
+            android:key="clear_friends_preference"
+            android:title="Clear All Friends"
+            android:summary="Removes all friends imported from contacts." />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

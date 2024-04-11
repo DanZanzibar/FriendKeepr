@@ -5,6 +5,11 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/alerts_fragment">
 
+    <action
+        android:id="@+id/action_go_to_settings"
+        app:destination="@id/settings_fragment"
+        />
+
     <fragment
         android:id="@+id/alerts_fragment"
         android:name="com.example.friendkeepr.AlertsFragment"
@@ -13,16 +18,16 @@
         />
 
     <fragment
-        android:id="@+id/contacts_fragment"
-        android:name="com.example.friendkeepr.ContactsFragment"
-        tools:layout="@layout/fragment_contacts"
-        android:label="Contacts"
+        android:id="@+id/friends_fragment"
+        android:name="com.example.friendkeepr.FriendsFragment"
+        tools:layout="@layout/fragment_friends"
+        android:label="Friends"
         />
 
     <fragment
         android:id="@+id/groups_fragment"
-        android:name="com.example.friendkeepr.GroupsFragment"
-        tools:layout="@layout/fragment_groups"
+        android:name="com.example.friendkeepr.CategoriesFragment"
+        tools:layout="@layout/fragment_categories"
         android:label="Groups"
         />
 
@@ -31,6 +36,12 @@
         android:name="com.example.friendkeepr.ImportFragment"
         tools:layout="@layout/fragment_import"
         android:label="Import"
+        />
+
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.example.friendkeepr.SettingsFragment"
+        android:label="Settings"
         />
 
 </navigation>
